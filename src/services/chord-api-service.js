@@ -21,9 +21,9 @@ const ChordServiceApi = {
 
       },
     })
-      .then((res) => (!res.ok)
+      .then((res) => ((!res.ok)
         ? res.json().then((e) => Promise.reject(e))
-        : res.json());
+        : res.json()));
   },
 };
 

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "alias": "chord-courier",
+  "name": "chord-courier",
+  "routes": [
+    {
+      "src": "^/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": ".*",
+      "dest": "/index.html"
+    }
+  ]
+}
