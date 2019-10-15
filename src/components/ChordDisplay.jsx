@@ -2,17 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function ChordDisplay(props) {
-  const { chords } = props;
+  let { chords } = props;
+  chords = chords.filter((chord) => chord.variation === '1');
   return (
     <ul>
       {chords.map((chord) => (
-        <li>
+        <li key={chord.id}>
           <h3>
             {chord.chord_name}
-            variation-
-            {chord.variation}
           </h3>
-          <img src="../image-assets/cmaj-1.png" alt="c major first variation" />
+          <img src={require(`../image-assets/${chord.notation}-${chord.variation}.png`)} alt="c major first variation" />
         </li>
       ))}
     </ul>

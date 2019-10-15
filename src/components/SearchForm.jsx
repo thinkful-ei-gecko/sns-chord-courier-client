@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ChordApiService from '../services/chord-api-service';
+import ChordDisplay from './ChordDisplay';
 
 export default function SearchFrom() {
   const [key, setKey] = useState('A');
@@ -29,15 +30,8 @@ export default function SearchFrom() {
         <button type="submit">Search</button>
       </form>
 
-      <ul>
-        {searchResults.map((chord) => (
-          <li>
-            {chord.chord_name}
-             variation-
-            {chord.variation}
-          </li>
-        ))}
-      </ul>
+      <ChordDisplay chords={searchResults} />
+
     </section>
   );
 }
