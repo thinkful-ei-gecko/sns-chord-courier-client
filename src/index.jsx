@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
-import SearchForm from './components/SearchForm';
+import App from './components/App';
 import './index.css';
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<SearchForm />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
