@@ -18,10 +18,8 @@ export default function SearchFrom() {
       <form className="key-search-form" onSubmit={(ev) => handleSubmit(ev)}>
         <select onChange={(e) => setKey(e.target.value)}>
           <option value="A">A Major</option>
-          <option value="Bb">Bb Major</option>
           <option value="B">B Major</option>
           <option value="C">C Major</option>
-          <option value="Db">Db Major</option>
           <option value="D">D Major</option>
           <option value="E">E Major</option>
           <option value="F">F Major</option>

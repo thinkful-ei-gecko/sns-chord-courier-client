@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ChordDiagram from './ChordDiagram/ChordDiagram';
 
 export default function ChordDisplay(props) {
   let { chords } = props;
@@ -11,7 +12,7 @@ export default function ChordDisplay(props) {
           <h3>
             {chord.chord_name}
           </h3>
-          <img src={require(`../image-assets/${chord.notation}-${chord.variation}.png`)} alt="c major first variation" />
+          <ChordDiagram chordCode={chord.chord_code} />
         </li>
       ))}
     </ul>

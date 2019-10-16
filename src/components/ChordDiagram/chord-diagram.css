@@ -7,6 +7,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 3px;
+  margin-bottom: 5%;
 }
 
 .open-diagram {
@@ -18,12 +19,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 3px;
+  margin-bottom: 5%;
 }
 
 .fret {
   position: absolute;
   top: 15px;
-  left: -25px;
+  left: -28px;
   font-size: 20px
 }
 
