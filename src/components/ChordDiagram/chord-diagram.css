@@ -7,7 +7,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 3px;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
 
 .open-diagram {
@@ -19,7 +19,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 3px;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
 }
 
 .fret {
@@ -55,7 +55,7 @@
     position: absolute;
     content: '';
     width: 100%;
-    height: 2px; /* cross thickness */
+    height: 2px;
     background-color: black;
     border-radius: 3px;
 }
@@ -80,13 +80,11 @@
 }
 
 .barre {
-  position: absolute;
-  top: -70px;
-}
-
-svg {
+  background-image: url('../../image-assets/barre.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 250px;
   height: 30px;
-  margin-bottom: 5%;
-  background: white;
+  top: -70px;
+  position: absolute;
 }
