@@ -1,6 +1,11 @@
+/* eslint-disable array-callback-return */
 /* eslint-disable no-undef */
 import React from 'react';
 import PropTypes from 'prop-types';
+import MutedString from './muted-string/MutedString';
+import OpenString from './open-string/OpenString';
+import Finger from './finger/Finger';
+import Fret from './fret/Fret';
 import './chord-diagram.css';
 
 export default function ChordDiagram(props) {
@@ -12,34 +17,18 @@ export default function ChordDiagram(props) {
 
     fingerPos = fingerPos.map((pos) => (!'xbo'.includes(pos) ? parseInt(pos, 10) : pos));
 
+    // eslint-disable-next-line consistent-return
     fingerPos = fingerPos.map((pos, index) => {
-      let style = {};
-      if (pos === 'x') {
-        style = {
-          left: `${(index - 1) * 50 - 13}px`,
-          top: `${-35}px`,
-        };
-        return (<div className="muted-string" style={style} />);
-      } if (pos === 'o') {
-        style = {
-          left: `${(index - 1) * 50 - 11}px`,
-          top: `${-34}px`,
-        };
-        return (<div className="open-string" style={style} />);
-      } if (pos === 'b') {
+      if (pos === 'b') {
         barre = 'barre';
+      } if (pos === 'x') {
+        return <MutedString stringNo={index} />;
+      } if (pos === 'o') {
+        return <OpenString stringNo={index} />;
       } if (index === 0 && pos !== 0) {
-        return (
-          <div className="fret">
-            {pos}
-          </div>
-        );
+        return <Fret fret={pos} />;
       } if (index >= 1 && typeof pos === 'number') {
-        style = {
-          left: `${((index - 1) * 50) - 15}px`,
-          top: `${(pos * 50) + 13}px`,
-        };
-        return (<div className="finger" style={style} />);
+        return <Finger stringNo={index} fret={pos} />;
       }
     });
     return { startFret, fingerPos, barre };

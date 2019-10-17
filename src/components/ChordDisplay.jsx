@@ -3,8 +3,20 @@ import PropTypes from 'prop-types';
 import ChordDiagram from './ChordDiagram/ChordDiagram';
 
 export default function ChordDisplay(props) {
-  let { chords } = props;
-  chords = chords.filter((chord) => chord.variation === '1');
+  const { chords } = props;
+
+  chords.sort((a, b) => {
+    if (a.notation[0] > b.notation[0]) return 1;
+    if (a.notation[0] < b.notation[0]) return -1;
+    if (a.variation > b.variation) return 1;
+    return -1;
+  });
+
+  const splitIndex = chords.findIndex((chord) => chord.notation === chord.tonic);
+  const prefix = chords.splice(0, splitIndex);
+
+  chords.push(...prefix);
+
   return (
     <ul>
       {chords.map((chord) => (
