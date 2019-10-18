@@ -3,32 +3,32 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import PropTypes from 'prop-types';
-import MutedString from './muted-string/MutedString';
-import OpenString from './open-string/OpenString';
-import Finger from './finger/Finger';
-import Fret from './fret/Fret';
-import './chord-diagram.css';
+import SmallMutedString from './small-muted-string/SmallMutedString';
+import SmallOpenString from './small-open-string/SmallOpenString';
+import LittleFinger from './little-finger/LittleFinger';
+import SmallFret from './small-fret/SmallFret';
+import './small-diagram.css';
 
-export default function ChordDiagram(props) {
+export default function SmallDiagram(props) {
   const generateFingerPosition = (position) => {
     let fingerPos = position.split(',');
     const start = fingerPos[0];
-    const startFret = start !== '0' ? 'diagram' : 'open-diagram';
+    const startFret = start !== '0' ? 'small-diagram' : 'small-open-diagram';
     let barre = '';
     fingerPos = fingerPos.map((pos) => (!'xbo'.includes(pos) ? parseInt(pos, 10) : pos));
 
     // eslint-disable-next-line consistent-return
     fingerPos = fingerPos.map((pos, index) => {
       if (pos === 'b') {
-        barre = 'barre';
+        barre = 'small-barre';
       } if (pos === 'x') {
-        return <MutedString stringNo={index} key={index} />;
+        return <SmallMutedString stringNo={index} key={index} />;
       } if (pos === 'o') {
-        return <OpenString stringNo={index} key={index} />;
+        return <SmallOpenString stringNo={index} key={index} />;
       } if (index === 0 && pos !== 0) {
-        return <Fret fret={pos} key={index} />;
+        return <SmallFret fret={pos} key={index} />;
       } if (index >= 1 && typeof pos === 'number') {
-        return <Finger stringNo={index} fret={pos} key={index} />;
+        return <LittleFinger stringNo={index} fret={pos} key={index} />;
       }
     });
     return { startFret, fingerPos, barre };
@@ -45,10 +45,10 @@ export default function ChordDiagram(props) {
   );
 }
 
-ChordDiagram.defaultProps = {
+SmallDiagram.defaultProps = {
   chordCode: '0,x,2,1,o,0,o',
 };
 
-ChordDiagram.propTypes = {
+SmallDiagram.propTypes = {
   chordCode: PropTypes.string,
 };

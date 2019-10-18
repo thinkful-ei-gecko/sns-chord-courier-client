@@ -1,0 +1,27 @@
+.small-muted-string {
+  position: absolute;
+  margin: 0;
+  height: 5px;
+  width: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small-muted-string::before,
+.small-muted-string::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.small-muted-string::before {
+    transform: rotate(45deg);
+}
+
+.small-muted-string::after {
+    transform: rotate(-45deg);
+}

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ChordApiService from '../services/chord-api-service';
-import ChordDisplay from './ChordDisplay';
+import ChordDisplay from './chord-display/ChordDisplay';
 
-export default function SearchFrom() {
+export default function SearchForm() {
   const [key, setKey] = useState('A');
   const [searchResults, setSearchResults] = useState([]);
+  const [progression, setProgression] = useState('');
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -28,6 +29,7 @@ export default function SearchFrom() {
       'i-vi-iv-v',
     ];
     const randomProg = progressions[Math.floor(Math.random() * Math.floor(progressions.length))];
+    setProgression(randomProg);
     ChordApiService.getChordProgressionByKey(key, randomProg)
       .then((chords) => setSearchResults(chords));
   };
@@ -65,7 +67,7 @@ export default function SearchFrom() {
       </form>
       <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Random Progression</button>
 
-      <ChordDisplay chords={searchResults} />
+      <ChordDisplay chords={searchResults} progression={progression} />
 
     </section>
   );
