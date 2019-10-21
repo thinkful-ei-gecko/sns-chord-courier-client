@@ -7,7 +7,7 @@ export default function SmallMutedString(props) {
 
   const style = {
     left: `${((stringNo - 1) * 10) - 3}px`,
-    top: `${-10}px`,
+    top: `${-8}px`,
   };
 
   return (

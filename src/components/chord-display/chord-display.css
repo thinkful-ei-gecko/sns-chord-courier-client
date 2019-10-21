@@ -1,4 +1,21 @@
-.small {
-  width: 50px;
-  height: 50px;
+.grid > * {
+  padding: .5rem;
+}
+
+.grid {
+    display: grid;
+    gap: .5rem;
+    list-style-type: none;
+  }
+
+
+@media screen and (min-width: 40em) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .grid li {
+      grid-column: span 2;
+      grid-row: span 2;
+  }
 }

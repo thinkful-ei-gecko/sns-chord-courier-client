@@ -8,8 +8,24 @@ body {
   font-family: 'BioRhyme', serif;
   line-height: 1.5;
   text-align: center;
-  width: 95%;
-  margin: 0 auto;
   background: #FFFDE5;
   color: #123B22;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 20%;
+}
+
+@media screen and (min-width: 40em) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  main {
+    width: 60%;
+  }
 }

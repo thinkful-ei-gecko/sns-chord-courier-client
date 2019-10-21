@@ -7,7 +7,7 @@ export default function SmallOpenString(props) {
 
   const style = {
     left: `${(stringNo - 1) * 10 - 2.5}px`,
-    top: `${-10}px`,
+    top: `${-8}px`,
   };
   return (<div className="small-open-string" style={style} />);
 }

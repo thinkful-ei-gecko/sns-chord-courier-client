@@ -1,12 +1,12 @@
 .gallery {
   list-style-type: none;
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 .chord-name {
   font-weight: bold;
   font-size: 22px;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 .small-diagram {
@@ -17,8 +17,8 @@
 .chord-button {
   border: none;
   padding: 12px;
-  margin: 2% auto;
-  border-radius: 3px;
+  margin: 1% auto;
+  border-radius: 5px;
   background: #FFFDE5;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
