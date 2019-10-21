@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ChordApiService from '../services/chord-api-service';
-import ChordDisplay from './chord-display/ChordDisplay';
+import ChordApiService from '../../services/chord-api-service';
+import ChordDisplay from '../chord-display/ChordDisplay';
+import './search-form.css';
 
 export default function SearchForm() {
   const [key, setKey] = useState('A');
@@ -35,9 +36,9 @@ export default function SearchForm() {
   };
 
   return (
-    <section>
+    <section className="search-form">
       <form className="key-search-form" onSubmit={(ev) => handleSubmit(ev)}>
-        <select onChange={(e) => setKey(e.target.value)}>
+        <select className="key-choices" onChange={(e) => setKey(e.target.value)}>
           <option value="A">A Major</option>
           <option value="Bb">Bb Major</option>
           <option value="B">B Major</option>
@@ -63,9 +64,9 @@ export default function SearchForm() {
           <option value="Bbm">Bb Minor</option>
           <option value="Bm">B Minor</option>
         </select>
-        <button type="submit">Search</button>
+        {/* <button type="submit">Search</button> */}
       </form>
-      <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Random Progression</button>
+      <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Build progression</button>
 
       <ChordDisplay chords={searchResults} progression={progression} />
 

@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   border-radius: 3px;
   margin-bottom: 12%;
+  margin-top: 12%;
 }
 
 .open-diagram {
@@ -20,6 +21,7 @@
   background-repeat: no-repeat;
   border-radius: 3px;
   margin-bottom: 12%;
+  margin-top: 12%;
 }
 
 .barre {
@@ -28,6 +30,6 @@
   background-repeat: no-repeat;
   width: 250px;
   height: 30px;
-  top: -65px;
+  top: -53px;
   position: absolute;
 }

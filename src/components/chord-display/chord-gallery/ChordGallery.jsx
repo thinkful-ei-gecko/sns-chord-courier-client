@@ -25,18 +25,18 @@ export default function ChordGallery(props) {
   };
 
   return (
-    <ul>
+    <ul className="gallery">
       {chordItems.map((chord, index) => (
         index === 0
           ? (
             <li key={chord.id}>
-              <h3>{chord.chord_name}</h3>
+              <h3 className="chord-name">{chord.chord_name}</h3>
               <ChordDiagram chordCode={chord.chord_code} />
             </li>
           )
           : (
-            <li key={chord.id}>
-              <button type="button" onClick={() => handleClick(chord.id)}>
+            <li key={chord.id} className="small-diagram-buttons">
+              <button type="button" className="chord-button" onClick={() => handleClick(chord.id)}>
                 <SmallDiagram chordCode={chord.chord_code} />
               </button>
             </li>

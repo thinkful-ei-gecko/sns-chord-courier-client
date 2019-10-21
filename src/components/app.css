@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'BioRhyme', serif;
+  line-height: 1.5;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  background: #FFFDE5;
+  color: #123B22;
+}
