@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ChordApiService from '../../services/chord-api-service';
 import ChordDisplay from '../chord-display/ChordDisplay';
+import DarkHeader from '../Header/DarkHeader';
 import './search-form.css';
 
 export default function SearchForm() {
@@ -36,41 +37,44 @@ export default function SearchForm() {
   };
 
   return (
-    <section className="search-form">
-      <form className="key-search-form" onSubmit={(ev) => handleSubmit(ev)}>
-        <select className="key-choices" onChange={(e) => setKey(e.target.value)}>
-          <option value="A">A Major</option>
-          <option value="Bb">Bb Major</option>
-          <option value="B">B Major</option>
-          <option value="C">C Major</option>
-          <option value="Db">Db Major</option>
-          <option value="D">D Major</option>
-          <option value="Eb">Eb Major</option>
-          <option value="E">E Major</option>
-          <option value="F">F Major</option>
-          <option value="F#">F# Major</option>
-          <option value="G">G Major</option>
-          <option value="Ab">Ab Major</option>
-          <option value="Cm">C Minor</option>
-          <option value="C#m">C# Minor</option>
-          <option value="Dm">D Minor</option>
-          <option value="D#m">D# Minor</option>
-          <option value="Em">E Minor</option>
-          <option value="Fm">F Minor</option>
-          <option value="F#m">C Minor</option>
-          <option value="Gm">G Minor</option>
-          <option value="G#m">G# Minor</option>
-          <option value="Am">A Minor</option>
-          <option value="Bbm">Bb Minor</option>
-          <option value="Bm">B Minor</option>
-        </select>
-        {/* <button type="submit">Search</button> */}
-      </form>
-      <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Build progression</button>
+    <>
+      <DarkHeader />
+      <section className="search-form">
+        <form className="key-search-form" onSubmit={(ev) => handleSubmit(ev)}>
+          <select className="key-choices" onChange={(e) => setKey(e.target.value)}>
+            <option value="A">A Major</option>
+            <option value="Bb">Bb Major</option>
+            <option value="B">B Major</option>
+            <option value="C">C Major</option>
+            <option value="Db">Db Major</option>
+            <option value="D">D Major</option>
+            <option value="Eb">Eb Major</option>
+            <option value="E">E Major</option>
+            <option value="F">F Major</option>
+            <option value="F#">F# Major</option>
+            <option value="G">G Major</option>
+            <option value="Ab">Ab Major</option>
+            <option value="Cm">C Minor</option>
+            <option value="C#m">C# Minor</option>
+            <option value="Dm">D Minor</option>
+            <option value="D#m">D# Minor</option>
+            <option value="Em">E Minor</option>
+            <option value="Fm">F Minor</option>
+            <option value="F#m">C Minor</option>
+            <option value="Gm">G Minor</option>
+            <option value="G#m">G# Minor</option>
+            <option value="Am">A Minor</option>
+            <option value="Bbm">Bb Minor</option>
+            <option value="Bm">B Minor</option>
+          </select>
+          {/* <button type="submit">Search</button> */}
+        </form>
+        <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Build progression</button>
 
-      <ChordDisplay chords={searchResults} progression={progression} />
+        <ChordDisplay chords={searchResults} progression={progression} />
 
-    </section>
+      </section>
+    </>
   );
 }
 

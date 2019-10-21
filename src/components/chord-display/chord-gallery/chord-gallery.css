@@ -32,3 +32,7 @@
 .chord-button:focus {
   background: #9CFFC2;
 }
+
+#root {
+  background: none;
+}

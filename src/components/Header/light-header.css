@@ -1,0 +1,21 @@
+.light-header-h1, .light-header-h2 {
+  color: rgb(182, 255, 210);
+  text-shadow: 1px 1px black;
+}
+
+.light-header-h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  h2 {
+    font-size: 28px;
+  }
+}

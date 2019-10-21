@@ -1,5 +1,57 @@
-h3, h4 {
+.hero-h3, .hero-h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  color: #9CFFC2;
+  text-shadow: 1px 1px black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero-h5 {
+  height: 30px;
+  width: 200px;
+  background: #123B22;
+  color: #9CFFC2;
+  margin: 3% auto;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.hero-image {
+  background: linear-gradient( rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.666) ), url('../../image-assets/guitar-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 40em) {
+  .hero-h3, .hero-h4 {
+    font-size: 22px;
+  }
+
+  .hero-h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .hero-h3, .hero-h4 {
+    font-size: 24px;
+  }
+
+  .hero-h5 {
+    font-size: 20px;
+  }
 }

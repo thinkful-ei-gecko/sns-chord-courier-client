@@ -13,19 +13,18 @@ body {
 }
 
 main {
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 20%;
+  /* width: 95%; */
+  /* margin: 0 auto; */
 }
 
 @media screen and (min-width: 40em) {
   main {
-    width: 80%;
+    /* width: 80%; */
   }
 }
 
 @media screen and (min-width: 100em) {
   main {
-    width: 60%;
+    /* width: 50%; */
   }
 }
