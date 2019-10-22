@@ -1,0 +1,38 @@
+.link-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.link-list > a {
+  color: rgb(182, 255, 210);
+  font-size: 16px;
+  width: 30%;
+}
+
+.link-list > a:visited {
+  color: rgb(182, 255, 210);
+}
+
+.link-list > a:hover,
+.link-list > a:focus {
+  text-shadow: 1px 1px 1px #9CFFC2;
+}
+
+@media screen and (min-width: 40em) {
+  .link-list > a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .link-list > a {
+    font-size: 22px;
+  }
+}

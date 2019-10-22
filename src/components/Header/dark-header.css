@@ -1,3 +1,7 @@
+.dark-header {
+  margin-top: 50px;
+}
+
 .dark-header-h1, .dark-header-h2 {
   font-family: 'BioRhyme', serif;
   color: #123B22;
@@ -5,7 +9,7 @@
 }
 
 .dark-header-h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
 }
 

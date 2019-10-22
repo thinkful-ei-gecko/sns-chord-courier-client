@@ -1,0 +1,38 @@
+.dark-link-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+}
+
+.dark-link-list > a {
+  color: #123B22;
+  font-size: 12px;
+  width: 33%;
+}
+
+.dark-link-list > a:visited {
+  color: #123B22;
+}
+
+.dark-link-list > a:hover,
+.dark-link-list > a:focus {
+  text-shadow: 1px 1px 1px #9CFFC2;
+}
+
+@media screen and (min-width: 40em) {
+  .dark-link-list > a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .dark-link-list > a {
+    font-size: 22px;
+  }
+}

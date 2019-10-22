@@ -12,12 +12,20 @@
 .hero-h5 {
   height: 30px;
   width: 200px;
-  background: #123B22;
-  color: #9CFFC2;
+  background: #9CFFC2;
+  color: #123B22;
   margin: 3% auto;
   border-radius: 3px;
   font-size: 16px;
   line-height: 30px;
+}
+
+.hero-h5:hover,
+.hero-h5:focus {
+  font-size: 18px;
+  background: #123B22;
+  color: #9CFFC2;
+  box-shadow: 3px 3px 5px #CAEBD6;
 }
 
 .hero-image {
@@ -44,6 +52,11 @@
   .hero-h5 {
     font-size: 18px;
   }
+
+  .hero-h5:hover,
+  .hero-h5:focus {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 100em) {
@@ -53,5 +66,10 @@
 
   .hero-h5 {
     font-size: 20px;
+  }
+
+  .hero-h5:hover,
+  .hero-h5:focus {
+    font-size: 22px;
   }
 }

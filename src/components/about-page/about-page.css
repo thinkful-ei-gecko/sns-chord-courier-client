@@ -1,0 +1,70 @@
+.about-h3, .about-h4, .about-h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  color: #9CFFC2;
+  text-shadow: 1px 1px black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* .about-h5 {
+  height: 30px;
+  width: 200px;
+  color: #9CFFC2;
+  margin: 3% auto;
+  font-size: 16px;
+} */
+
+.about-p {
+  color: #9CFFC2;
+  font-size: 14px;
+  text-shadow: 1px 1px black;
+}
+
+
+.about-image {
+  background: linear-gradient( rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.666) ), url('../../image-assets/about-page-background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.about-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 40em) {
+  .about-h3, .about-h4, .about-h5 {
+    font-size: 22px;
+  }
+
+  .about-p {
+    font-size: 16px;
+  }
+  .about-text {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .about-h3, .about-h4, .about-h5 {
+    font-size: 24px;
+  }
+
+  .about-p {
+    font-size: 18px;
+  }
+
+  .about-text {
+    width: 60%;
+  }
+}

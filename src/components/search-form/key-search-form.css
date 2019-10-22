@@ -1,0 +1,36 @@
+.search-button {
+  border: none;
+  background: #123B22;
+  color: #CAEBD6;
+  font-size: 14px;
+  font-weight: bold;
+  width: 40%;
+  max-width: 160px;
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover, 
+.search-button:focus {
+  background: #9CFFC2;
+  color: #123B22;
+}
+
+.search-form {
+  padding-top: 4%;
+}
+
+.key-choices {
+  width: 40%;
+  max-width: 160px;
+  border: none;
+  background: #123B22;
+  color: #CAEBD6;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px;
+}

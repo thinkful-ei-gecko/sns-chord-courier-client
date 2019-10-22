@@ -12,19 +12,18 @@ body {
   color: #123B22;
 }
 
-main {
-  /* width: 95%; */
-  /* margin: 0 auto; */
-}
-
 @media screen and (min-width: 40em) {
-  main {
-    /* width: 80%; */
-  }
+
 }
 
 @media screen and (min-width: 100em) {
-  main {
-    /* width: 50%; */
-  }
+
 }
+
+/*
+#123B22
+#9CFFC2
+#4FFF92
+#CAEBD6
+#0D2B19
+*/

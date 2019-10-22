@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import SearchForm from './search-form/SearchForm';
-// import Header from './Header/LightHeader';
+import AboutPage from './about-page/AboutPage';
+import KeySearchForm from './search-form/KeySearchForm';
 import LandingPage from './landing-page/LandingPage';
-import NotFoundPage from './not-found-page/NotFoundPage.jsx';
+import NotFoundPage from './not-found-page/NotFoundPage';
 import './app.css';
 
 function App() {
@@ -19,6 +20,14 @@ function App() {
           <Route
             path="/search"
             component={SearchForm}
+          />
+          <Route
+            path="/full-search"
+            component={KeySearchForm}
+          />
+          <Route
+            path="/about"
+            component={AboutPage}
           />
           <Route
             component={NotFoundPage}

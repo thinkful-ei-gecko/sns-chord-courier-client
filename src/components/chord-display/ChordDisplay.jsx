@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import ChordDiagram from '../ChordDiagram/ChordDiagram';
 import ChordGallery from './chord-gallery/ChordGallery';
-// import SmallDiagram from '../ChordDiagram/small-diagram/SmallDiagram';
 import './chord-display.css';
 
 export default function ChordDisplay(props) {

@@ -1,39 +1,18 @@
 import React, { useState } from 'react';
 import ChordApiService from '../../services/chord-api-service';
-import ChordDisplay from '../chord-display/ChordDisplay';
+import ChordKeyDisplay from '../chord-key-display/ChordKeyDisplay';
 import DarkHeader from '../Header/DarkHeader';
 import DarkNav from '../Nav/DarkNav';
-import './search-form.css';
+import './key-search-form.css';
 
 export default function SearchForm() {
   const [key, setKey] = useState('A');
   const [searchResults, setSearchResults] = useState([]);
-  const [progression, setProgression] = useState('');
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
     setSearchResults([]);
     ChordApiService.getChordsByKey(key)
-      .then((chords) => setSearchResults(chords));
-  };
-
-  const handleProgressionClick = () => {
-    const progressions = [
-      'i-iv-v-v',
-      'i-i-iv-v',
-      'i-iv-i-v',
-      'i-iv-v-iv',
-      'i-vi-ii-v',
-      'iii-vi-ii-v',
-      'i-v-vi-iv',
-      'vi-iv-i-v',
-      'i-v-vi-v',
-      'i-vi-iv-v',
-      'i-vi-iv-v',
-    ];
-    const randomProg = progressions[Math.floor(Math.random() * Math.floor(progressions.length))];
-    setProgression(randomProg);
-    ChordApiService.getChordProgressionByKey(key, randomProg)
       .then((chords) => setSearchResults(chords));
   };
 
@@ -69,49 +48,12 @@ export default function SearchForm() {
             <option value="Bbm">Bb Minor</option>
             <option value="Bm">B Minor</option>
           </select>
-          {/* <button type="submit">Search</button> */}
+          <button type="submit" className="search-button">Search</button>
         </form>
-        <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Build progression</button>
 
-        <ChordDisplay chords={searchResults} progression={progression} />
+        <ChordKeyDisplay chords={searchResults} />
 
       </section>
     </>
   );
 }
-
-
-/*
-I–IV–V–V
-I–I–IV–V
-I–IV–I–V
-I–IV–V–IV
-
---I–ii–V
-
-jazz
---ii–V–I --Dm7 G7 Cmaj7
-
-I–vi–ii–V -- C Am7 Dm7 G7
-III-vi-ii-V
-
-rock/pop
-I–V–vi–IV
-vi-IV-I-V
-I-V-vi-V
-I-vi-IV-V
-I–vi–IV–V
-
-i-iv-v-v,
-i-i-iv-v,
-i-iv-i-v,
-i-iv-v-iv,
-i-vi-ii-v,
-iii-vi-ii-v,
-i-v-vi-iv,
-vi-iv-i-v,
-i-v-vi-v,
-i-vi-iv-v,
-i-vi-iv-v,
-
-*/
