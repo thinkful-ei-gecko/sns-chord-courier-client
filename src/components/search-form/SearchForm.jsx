@@ -29,8 +29,8 @@ export default function SearchForm() {
       'vi-iv-i-v',
       'i-v-vi-v',
       'i-vi-iv-v',
-      'i-vi-iv-v',
     ];
+
     const randomProg = progressions[Math.floor(Math.random() * Math.floor(progressions.length))];
     setProgression(randomProg);
     ChordApiService.getChordProgressionByKey(key, randomProg)
@@ -79,39 +79,3 @@ export default function SearchForm() {
     </>
   );
 }
-
-
-/*
-I–IV–V–V
-I–I–IV–V
-I–IV–I–V
-I–IV–V–IV
-
---I–ii–V
-
-jazz
---ii–V–I --Dm7 G7 Cmaj7
-
-I–vi–ii–V -- C Am7 Dm7 G7
-III-vi-ii-V
-
-rock/pop
-I–V–vi–IV
-vi-IV-I-V
-I-V-vi-V
-I-vi-IV-V
-I–vi–IV–V
-
-i-iv-v-v,
-i-i-iv-v,
-i-iv-i-v,
-i-iv-v-iv,
-i-vi-ii-v,
-iii-vi-ii-v,
-i-v-vi-iv,
-vi-iv-i-v,
-i-v-vi-v,
-i-vi-iv-v,
-i-vi-iv-v,
-
-*/

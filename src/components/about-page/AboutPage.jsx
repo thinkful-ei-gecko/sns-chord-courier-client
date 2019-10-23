@@ -20,7 +20,7 @@ export default function AboutPage() {
             </p>
             <h4 className="about-h4">Explore chord by key</h4>
             <p className="about-p">
-              Feel free to search through all chords in a given key to build your own progressions. 
+              Feel free to search through all chords in a given key to build your own progressions.
                Take some time to expand your chord knowledge.
             </p>
             <h4 className="about-h5">More chords coming</h4>

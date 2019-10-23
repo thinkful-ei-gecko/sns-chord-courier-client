@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders the UI as expected 1`] = `
+<div
+  className="App"
+>
+  <main
+    className="App-main"
+  >
+    <nav
+      className="nav-bar"
+    >
+      <ul
+        className="link-list"
+      >
+        <a
+          href="/search"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <li
+            className="nav-link"
+          >
+            Progression Randomizer
+          </li>
+        </a>
+        <a
+          href="/full-search"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <li
+            className="nav-link"
+          >
+            Chords by Key
+          </li>
+        </a>
+        <a
+          href="/about"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          <li
+            className="nav-link"
+          >
+            About
+          </li>
+        </a>
+      </ul>
+    </nav>
+    <section
+      className="app-description"
+    >
+      <div
+        className="hero-image"
+      >
+        <div
+          className="hero-text"
+        >
+          <section>
+            <h1
+              className="light-header-h1"
+            >
+              Chord Courier
+            </h1>
+            <h2
+              className="light-header-h2"
+            >
+              Delivering fresh chords
+            </h2>
+          </section>
+          <h3
+            className="hero-h3"
+          >
+            your catalyst for musical inspiration
+          </h3>
+          <h4
+            className="hero-h4"
+          >
+            Explore chord progressions, make them your own
+          </h4>
+          <a
+            href="/search"
+            onClick={[Function]}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+          >
+            <h5
+              className="hero-h5"
+            >
+              Get started
+            </h5>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+`;
