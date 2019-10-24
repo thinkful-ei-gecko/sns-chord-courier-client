@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SmallDiagram component renders open position C maj chord when fed correct props 1`] = `
+<div
+  className="small-open-diagram"
+>
+  <div
+    className=""
+  />
+  <SmallMutedString
+    key="1"
+    stringNo={1}
+  />
+  <LittleFinger
+    fret={2}
+    key="2"
+    stringNo={2}
+  />
+  <LittleFinger
+    fret={1}
+    key="3"
+    stringNo={3}
+  />
+  <SmallOpenString
+    key="4"
+    stringNo={4}
+  />
+  <LittleFinger
+    fret={0}
+    key="5"
+    stringNo={5}
+  />
+  <SmallOpenString
+    key="6"
+    stringNo={6}
+  />
+</div>
+`;

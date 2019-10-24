@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DarkNav component renders the header correctly 1`] = `
+<nav
+  className="dark-nav-bar"
+>
+  <ul
+    className="dark-link-list"
+  >
+    <Link
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      to="/search"
+    >
+      <li
+        className="dark-nav-link"
+      >
+        Progression Randomizer
+      </li>
+    </Link>
+    <Link
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      to="/full-search"
+    >
+      <li
+        className="dark-nav-link"
+      >
+        Chords by Key
+      </li>
+    </Link>
+    <Link
+      style={
+        Object {
+          "textDecoration": "none",
+        }
+      }
+      to="/about"
+    >
+      <li
+        className="dark-nav-link"
+      >
+        About
+      </li>
+    </Link>
+  </ul>
+</nav>
+`;

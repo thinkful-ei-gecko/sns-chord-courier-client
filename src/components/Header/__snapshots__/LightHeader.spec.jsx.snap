@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LightHeader component renders the header correctly 1`] = `
+<section>
+  <h1
+    className="light-header-h1"
+  >
+    Chord Courier
+  </h1>
+  <h2
+    className="light-header-h2"
+  >
+    Delivering fresh chords
+  </h2>
+</section>
+`;

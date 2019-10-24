@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage component renders the header correctly 1`] = `
+<h1>
+  Oh dear, something went wrong.
+</h1>
+`;

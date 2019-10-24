@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChordDiagram component renders open position C maj chord when fed correct props 1`] = `
+<div
+  className="open-diagram"
+>
+  <div
+    className=""
+  />
+  <MutedString
+    key="1"
+    stringNo={1}
+  />
+  <Finger
+    fret={2}
+    key="2"
+    stringNo={2}
+  />
+  <Finger
+    fret={1}
+    key="3"
+    stringNo={3}
+  />
+  <OpenString
+    key="4"
+    stringNo={4}
+  />
+  <Finger
+    fret={0}
+    key="5"
+    stringNo={5}
+  />
+  <OpenString
+    key="6"
+    stringNo={6}
+  />
+</div>
+`;
