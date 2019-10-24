@@ -11,18 +11,18 @@
 }
 
 .dark-link-list > a {
-  color: #123B22;
+  color: black;
   font-size: 12px;
   width: 33%;
 }
 
 .dark-link-list > a:visited {
-  color: #123B22;
+  color: black;
 }
 
 .dark-link-list > a:hover,
 .dark-link-list > a:focus {
-  text-shadow: 1px 1px 1px #9CFFC2;
+  text-shadow: 1px 1px 1px #3E89E6;
 }
 
 @media screen and (min-width: 40em) {

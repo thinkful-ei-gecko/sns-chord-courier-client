@@ -11,18 +11,18 @@
 }
 
 .link-list > a {
-  color: rgb(182, 255, 210);
+  color: #A3CDFF;
   font-size: 16px;
   width: 30%;
 }
 
 .link-list > a:visited {
-  color: rgb(182, 255, 210);
+  color: #A3CDFF;
 }
 
 .link-list > a:hover,
 .link-list > a:focus {
-  text-shadow: 1px 1px 1px #9CFFC2;
+  text-shadow: 1px 1px 1px #3E89E6;
 }
 
 @media screen and (min-width: 40em) {

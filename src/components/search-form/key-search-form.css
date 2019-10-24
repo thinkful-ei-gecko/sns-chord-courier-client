@@ -1,7 +1,7 @@
 .search-button {
   border: none;
-  background: #123B22;
-  color: #CAEBD6;
+  background: #1C3D66;
+  color: white;
   font-size: 14px;
   font-weight: bold;
   width: 40%;
@@ -16,8 +16,8 @@
 
 .search-button:hover, 
 .search-button:focus {
-  background: #9CFFC2;
-  color: #123B22;
+  background: #A3CDFF;
+  color: black;
 }
 
 .search-form {
@@ -28,8 +28,8 @@
   width: 40%;
   max-width: 160px;
   border: none;
-  background: #123B22;
-  color: #CAEBD6;
+  background: #1C3D66;
+  color: white;
   font-weight: bold;
   border-radius: 3px;
   padding: 8px;

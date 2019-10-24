@@ -1,25 +1,16 @@
 .about-h3, .about-h4, .about-h5 {
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 3%;
   padding-top: 3%;
-  color: #9CFFC2;
+  color: #A3CDFF;
   text-shadow: 1px 1px black;
   width: 90%;
   margin: 0 auto;
 }
 
-/* .about-h5 {
-  height: 30px;
-  width: 200px;
-  color: #9CFFC2;
-  margin: 3% auto;
-  font-size: 16px;
-} */
-
 .about-p {
-  color: #9CFFC2;
+  color: #A3CDFF;
   font-size: 14px;
   text-shadow: 1px 1px black;
 }

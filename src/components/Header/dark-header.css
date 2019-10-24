@@ -3,8 +3,7 @@
 }
 
 .dark-header-h1, .dark-header-h2 {
-  font-family: 'BioRhyme', serif;
-  color: #123B22;
+  color: #1C3D66;
   padding-top: 1%;
 }
 
@@ -14,6 +13,7 @@
 }
 
 .dark-header-h2 {
+  color: black;
   padding-bottom: 1%;
 }
 

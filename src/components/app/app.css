@@ -5,17 +5,9 @@
 }
 
 body {
-  font-family: 'BioRhyme', serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5;
   text-align: center;
-  background: #FFFDE5;
-  color: #123B22;
+  background: white;
+  color: black;
 }
-
-/*
-#123B22
-#9CFFC2
-#4FFF92
-#CAEBD6
-#0D2B19
-*/
