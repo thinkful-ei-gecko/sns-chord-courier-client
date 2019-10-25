@@ -4,6 +4,8 @@
 
 Live app can be found here: https://chord-courier.now.sh/
 
+The server repo can be found here: https://github.com/thinkful-ei-gecko/sns-chord-courier-server
+
 Chord Courier allows users to explore chords by a given musical key. Users can view all chords in key, or use the progression randomizer to build a 4 chord progression and customize it to their taste.
 
 This app was built using React, Express, Postgres, and Node. Testing was done with Jest for the frontend, and Mocha/Chai for the backend.
