@@ -6,7 +6,7 @@ import DarkNav from '../Nav/DarkNav';
 import './search-form.css';
 
 export default function SearchForm() {
-  const [key, setKey] = useState('A');
+  const [key, setKey] = useState('E');
   const [searchResults, setSearchResults] = useState([]);
   const [progression, setProgression] = useState('');
 
