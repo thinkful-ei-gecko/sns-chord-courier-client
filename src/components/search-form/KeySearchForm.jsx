@@ -50,9 +50,7 @@ export default function SearchForm() {
           </select>
           <button type="submit" className="search-button">Search</button>
         </form>
-
         <ChordKeyDisplay chords={searchResults} />
-
       </section>
     </>
   );

@@ -72,9 +72,7 @@ export default function SearchForm() {
           {/* <button type="submit">Search</button> */}
         </form>
         <button type="button" className="progression-randomizer" onClick={() => handleProgressionClick()}>Build progression</button>
-
         <ChordDisplay chords={searchResults} progression={progression} />
-
       </section>
     </>
   );
