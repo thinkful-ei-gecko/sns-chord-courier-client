@@ -23,9 +23,10 @@ export default function AboutPage() {
               Feel free to search through all chords in a given key to build your own progressions.
                Take some time to expand your chord knowledge.
             </p>
-            <h4 className="about-h5">More chords coming</h4>
+            <h4 className="about-h5">Over 250 chords</h4>
             <p className="about-p">
-              More chords will be added as time allows...
+              You will find everything from the basics to chords right at home in jazz,
+               rock, pop or indie songs.
             </p>
           </div>
         </div>
