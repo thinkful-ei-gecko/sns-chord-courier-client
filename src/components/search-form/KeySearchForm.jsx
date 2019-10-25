@@ -45,7 +45,7 @@ export default function SearchForm() {
             <option value="Bbm">Bb Minor</option>
             <option value="Eb">Eb Major</option>
             <option value="Ab">Ab Major</option>
-            <option value="Dsharpm">Dsharp Minor</option>
+            <option value="Dsharpm">D# Minor</option>
             <option value="Gsharpm">G# Minor</option>
           </select>
           <button type="submit" className="search-button">Search</button>
