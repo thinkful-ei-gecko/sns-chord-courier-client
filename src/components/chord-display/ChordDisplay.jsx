@@ -43,7 +43,6 @@ export default function ChordDisplay(props) {
   return (
     <ul className="grid">
       {progSortedChords.map((chordGroup, index) => (
-
         // eslint-disable-next-line react/no-array-index-key
         <li key={index} className="grid-item">
           <ChordGallery chords={chordGroup} />
